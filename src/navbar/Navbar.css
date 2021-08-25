@@ -1,0 +1,31 @@
+#navbar-wrapper {
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     font-weight: bold;
+     padding: var(--navbar-padding) 0 var(--navbar-padding) 0;
+     position: fixed;
+     transition: 0.4s;
+     width: 100%;
+}
+
+.navbar-logo {
+     margin-left: var(--protection-margin);
+     font-size: var(--logo-size);
+}
+
+.navbar-items {
+     font-size: var(--navbar-items-size);
+     margin-right: var(--protection-margin);
+}
+
+.navbar-items a {
+     color: var(--grey);
+     padding-left: calc(2*var(--navbar-padding));
+     text-decoration: none;
+     transition: 0.4s;
+}
+
+.navbar-items a:hover {
+     color: black;
+}

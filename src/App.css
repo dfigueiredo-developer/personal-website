@@ -1,7 +1,7 @@
-.bold {
-     font-weight: bold;
+body {
+     height: 200vh;
 }
 
-.text-decoration-none {
-     text-decoration: none;
-}
+.bg-white {
+     background-color: white;
+   }

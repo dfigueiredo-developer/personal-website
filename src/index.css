@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+  --logo-size: 1.5rem;
+  --protection-margin: 5rem;
+  --navbar-padding: 1.5rem;
+  --navbar-items-size: 1.2rem;
+  --grey: #AAA;
+  --light-grey: #F1F1F1;
+}
+
 /* Font definition */
 @font-face {
   font-family: 'Sometype Mono';
@@ -12,6 +22,7 @@
 
 /* Default initialization */
 body {
+  background-color: var(--light-grey);
   margin: 0;
   font-family: 'Sometype Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
