@@ -1,0 +1,44 @@
+.about-wrapper {
+     background: url(../../images/profile-background.jpg) no-repeat;
+     height: 100vh;
+     background-size: cover;
+     display: flex;
+
+     &-left-content {
+          width: 35%;
+          margin-left: $space-large;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: white;
+          gap: $space-small;
+     }
+
+     h1 {
+          font-size: 4rem;
+          font-weight: 500;
+     }
+
+     p {
+          font-size: 2rem;
+     }
+
+     .download-btn {
+          padding: $space-small-biggest $space-medium-biggest;
+          font-size: 2rem;
+          border: 2px solid white;
+          text-decoration: none;
+          border-radius: 5px;
+          color: white;
+          background-color: transparent;
+          text-align: center;
+          transition: 0.4s;
+          width: 35%;
+     }
+
+     .download-btn:hover {
+          background-color: rgba(255, 255, 255, 0.123);
+          backdrop-filter: blur(3px);
+     }
+     
+}

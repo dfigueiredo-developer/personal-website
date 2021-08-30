@@ -1,0 +1,17 @@
+/* Font definition */
+@font-face {
+     font-family: $ff-sometype-mono;
+     src: local('sometype-mono'), url(../../fonts/sometype-mono/ttf/SometypeMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
+     font-family: $ff-sometype-mono;
+     font-weight: 500;
+     src: local('sometype-mono'), url(../../fonts/sometype-mono/ttf/SometypeMono-Medium.ttf) format('truetype');
+}
+     
+@font-face {
+     font-family: $ff-sometype-mono;
+     font-weight: bold;
+     src: local('sometype-mono'), url(../../fonts/sometype-mono/ttf/SometypeMono-Bold.ttf) format('truetype');
+}

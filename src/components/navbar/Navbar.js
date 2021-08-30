@@ -2,10 +2,10 @@ import items from './Items';
 
 window.onscroll = () => {
      var navbar = document.getElementById('navbar-wrapper');
-     if(window.scrollY > 100)
-          navbar.classList.add('bg-white');
+     if(window.scrollY > 80)
+          navbar.style.opacity = 1;
      else
-          navbar.classList.remove('bg-white');
+          navbar.style.opacity = 0;
 }
 
 const closeMenu = () => {

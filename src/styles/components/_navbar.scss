@@ -1,27 +1,30 @@
 #navbar-wrapper {
-     height: 80px;
+     height: $space-header;
      width: 100%;
-     background-color: white;
      display: flex;
+     opacity: 0;
      justify-content: space-between;
      align-items: center;
      font-weight: bold;
      position: fixed;
+     top: 0;
+     background-color: white;
      transition: 0.4s;
+     box-shadow: 0 0 3px 1px $grey-light;
 
      .navbar-logo {
           margin-left: $space-large;
-          font-size: var(--logo-size);
+          font-size: 1.5rem;
      }
      
      .navbar-items {
           margin-right: $space-large;
-          font-size: var(--navbar-items-size);
+          font-size: 1.2rem;
      }
 
      a {
-          color: var(--grey);
-          padding-left: calc(2*var(--navbar-padding));
+          color: $grey;
+          padding-left: $space-medium;
           text-decoration: none;
           font-weight: bold;
           transition: 0.4s;
@@ -60,7 +63,6 @@
                top: 80px;
                right: -100%;
                transition: all .5s;
-               background: white;
           }
 
           a {
@@ -72,4 +74,3 @@
           }
      }
 }
-
