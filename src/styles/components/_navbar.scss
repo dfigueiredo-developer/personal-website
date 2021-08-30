@@ -1,0 +1,75 @@
+#navbar-wrapper {
+     height: 80px;
+     width: 100%;
+     background-color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-weight: bold;
+     position: fixed;
+     transition: 0.4s;
+
+     .navbar-logo {
+          margin-left: $space-large;
+          font-size: var(--logo-size);
+     }
+     
+     .navbar-items {
+          margin-right: $space-large;
+          font-size: var(--navbar-items-size);
+     }
+
+     a {
+          color: var(--grey);
+          padding-left: calc(2*var(--navbar-padding));
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.4s;
+     }
+
+     a:hover {
+          color: black;
+     }
+
+     #toogle {
+          display: none;
+     }
+
+     .fa-bars {
+          cursor: pointer;
+          transform: scale(1.8);
+          margin-right: $space-large;
+          display: none;
+     }
+
+     @include mq(medium) {
+
+          .fa-bars {
+               display: inline-block;
+          }
+
+          .navbar-items {
+               position: fixed;
+               width: 100%;
+               height: 100%;
+               margin-right: 0;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               top: 80px;
+               right: -100%;
+               transition: all .5s;
+               background: white;
+          }
+
+          a {
+               padding: 0 0 $space-large 0;
+          }
+
+          #toogle:checked ~ .navbar-items {
+               right: 0;
+          }
+     }
+}
+

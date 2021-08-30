@@ -1,4 +1,3 @@
-import './Navbar.css';
 import items from './Items';
 
 window.onscroll = () => {
@@ -9,20 +8,26 @@ window.onscroll = () => {
           navbar.classList.remove('bg-white');
 }
 
+const closeMenu = () => {
+     let toogleInput = document.getElementById('toogle');
+     if(toogleInput.checked)
+          toogleInput.click();
+}
+
 const Navbar = () => {
      return (
-          
-          <div id = 'navbar-wrapper'>
+          <header id = 'navbar-wrapper'>
+               <input type = 'checkbox' id = 'toogle' />
                <span className = 'navbar-logo'>Diogo Figueiredo</span>
-
-               <span className = 'navbar-items'>
+               <nav className = 'navbar-items'>
                     {
                          items.map((item) => {
-                              return (<a key = {item.id} href = {item.anchor} className = 'bold text-decoration-none'>{item.label}</a>) 
+                              return (<a key = {item.id} href = {item.anchor} onClick = {() => closeMenu()}>{item.label}</a>) 
                          })
                     }
-               </span>
-          </div>
+               </nav>
+               <label htmlFor = 'toogle' className = 'fa fa-bars' />
+          </header>
       );
 }
  

@@ -16,8 +16,8 @@ const navbarItems = [
      },
      {
           'id': 3,
-          'label': 'Contacts',
-          'anchor': '#contacts'
+          'label': 'Contact',
+          'anchor': '#contact'
      }
 ]
 
