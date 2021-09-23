@@ -1,8 +1,9 @@
 /* Breakpoints */
 $breakpoints: (
-  'small': 320px,
-  'medium': 900px,
-  'large': 1024px,
+  'breakpoint-s': 320px,
+  'breakpoint-m': 950px,
+  'breakpoint-l': 1024px,
+  'breakpoint-xl': 1400px,
 );
 
 /* Spaces */
@@ -12,7 +13,7 @@ $space-medium: 3rem;
 $space-medium-biggest: 4rem;
 $space-large: 5rem;
 
-$space-header: 80px;
+$space-header: 70px;
 
 /*  Fonts */
 $ff-sometype-mono: 'Sometype Mono';

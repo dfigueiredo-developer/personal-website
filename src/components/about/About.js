@@ -1,17 +1,17 @@
-import CV from '../../assets/dummy.pdf';
+import resume from '../../assets/dummy.pdf';
 
 const About = () => {
      return ( 
          <section id = 'about' className = 'about-wrapper'>
-             <div className = 'about-wrapper-left-content'>
+            <div className = 'about-wrapper-left-content'>
                  <h1>Diogo Figueiredo</h1>
                  <p>
                     “Portuguese student in the field of web and
                     mobile development. Currently working for 
-                    Deloitte Portugal company, using mainly OutSystems.
+                    Deloitte Portugal company, using mainly OutSystems.”
                 </p>
-                <a href = {CV} className = 'download-btn' download = 'Diogo Figueiredo - Curriculum vitae.pdf'>Download CV</a>
-             </div>
+                <a href = {resume} className = 'download-btn' download = 'Diogo Figueiredo - Resume.pdf'>Download CV</a>
+            </div>
          </section>
       );
 }

@@ -10,7 +10,7 @@
      top: 0;
      background-color: white;
      transition: 0.4s;
-     box-shadow: 0 0 3px 1px $grey-light;
+     box-shadow: 0 0 3px 1px $color-grey-light;
 
      .navbar-logo {
           margin-left: $space-large;
@@ -23,7 +23,7 @@
      }
 
      a {
-          color: $grey;
+          color: $color-black;
           padding-left: $space-medium;
           text-decoration: none;
           font-weight: bold;
@@ -45,7 +45,7 @@
           display: none;
      }
 
-     @include mq(medium) {
+     @include mq(breakpoint-m){
 
           .fa-bars {
                display: inline-block;
