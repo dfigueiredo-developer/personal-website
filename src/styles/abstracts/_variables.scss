@@ -1,17 +1,19 @@
 /* Breakpoints */
 $breakpoints: (
   'breakpoint-s': 320px,
-  'breakpoint-m': 950px,
+  'breakpoint-m': 900px,
   'breakpoint-l': 1024px,
-  'breakpoint-xl': 1400px,
+  'breakpoint-xl': 1200px,
+  'breakpoint-xxl': 1400px,
+  'breakpoint-xxxl': 1500px,
 );
 
 /* Spaces */
-$space-small: 1rem;
-$space-small-biggest: 2rem;
-$space-medium: 3rem;
-$space-medium-biggest: 4rem;
-$space-large: 5rem;
+$space-xs: 1rem;
+$space-s: 2rem;
+$space-m: 3rem;
+$space-l: 4rem;
+$space-xl: 5rem;
 
 $space-header: 70px;
 

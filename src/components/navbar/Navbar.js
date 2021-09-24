@@ -6,6 +6,7 @@ window.onscroll = () => {
           navbar.style.opacity = 1;
      else
           navbar.style.opacity = 0;
+          
 }
 
 const closeMenu = () => {

@@ -10,21 +10,21 @@
      top: 0;
      background-color: white;
      transition: 0.4s;
-     box-shadow: 0 0 3px 1px $color-grey-light;
+     box-shadow: 0 0 3px 1px $color-neutral-200;
 
      .navbar-logo {
-          margin-left: $space-large;
+          margin-left: $space-xl;
           font-size: 1.5rem;
      }
      
      .navbar-items {
-          margin-right: $space-large;
+          margin-right: $space-xl;
           font-size: 1.2rem;
      }
 
      a {
-          color: $color-black;
-          padding-left: $space-medium;
+          color: $color-neutral-800;
+          padding-left: $space-m;
           text-decoration: none;
           font-weight: bold;
           transition: 0.4s;
@@ -41,7 +41,7 @@
      .fa-bars {
           cursor: pointer;
           transform: scale(1.8);
-          margin-right: $space-large;
+          margin-right: $space-l;
           display: none;
      }
 
@@ -66,7 +66,7 @@
           }
 
           a {
-               padding: 0 0 $space-large 0;
+               padding: 0 0 $space-l 0;
           }
 
           #toogle:checked ~ .navbar-items {
