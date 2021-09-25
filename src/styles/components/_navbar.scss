@@ -11,14 +11,15 @@
      background-color: white;
      transition: 0.4s;
      box-shadow: 0 0 3px 1px $color-neutral-200;
+     z-index: 3;
 
      .navbar-logo {
-          margin-left: $space-xl;
+          margin-left: $space-l + .05em;
           font-size: 1.5rem;
      }
      
      .navbar-items {
-          margin-right: $space-xl;
+          margin-right: $space-l + .05em;
           font-size: 1.2rem;
      }
 
@@ -41,11 +42,11 @@
      .fa-bars {
           cursor: pointer;
           transform: scale(1.8);
-          margin-right: $space-l;
+          margin-right: $space-xxl + .05em;
           display: none;
      }
 
-     @include mq(breakpoint-m){
+     @include mq(breakpoint-l){
 
           .fa-bars {
                display: inline-block;
@@ -60,13 +61,11 @@
                flex-direction: column;
                justify-content: center;
                align-items: center;
-               top: 80px;
+               top: $space-header;
                right: -100%;
                transition: all .5s;
-          }
-
-          a {
-               padding: 0 0 $space-l 0;
+               gap: $space-l;
+               background-color: rgba(255, 255, 255, .9);
           }
 
           #toogle:checked ~ .navbar-items {

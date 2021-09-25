@@ -1,4 +1,4 @@
-import items from './Items';
+import items from './NavbarItems';
 
 window.onscroll = () => {
      var navbar = document.getElementById('navbar-wrapper');
@@ -26,8 +26,8 @@ const Navbar = () => {
                               return (<a key = {item.id} href = {item.anchor} onClick = {() => closeMenu()}>{item.label}</a>) 
                          })
                     }
-               </nav>
-               <label htmlFor = 'toogle' className = 'fa fa-bars' />
+               </nav>   
+               <label htmlFor = 'toogle' className = 'fa fa-bars' /> 
           </header>
       );
 }

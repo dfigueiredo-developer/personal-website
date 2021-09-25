@@ -1,0 +1,13 @@
+.divider-up {
+     background-color: white;
+     height: $space-xxl;
+     margin-top: -($space-xxl);
+     transform: rotate(-2deg);
+}
+
+.divider-down {
+     background-color: white;
+     height: $space-xxl;
+     margin-top: -$space-s;
+     transform: rotate(2deg);
+}

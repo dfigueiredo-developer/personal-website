@@ -4,11 +4,15 @@ import reportWebVitals from './reportWebVitals';
 import './styles/main.scss';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
+import Divider from './components/divider/Divider';
+import Knowledge from './components/knowledge/Knowledge';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <About />
+    <Divider isDown = {true} />
+    <Knowledge />
   </React.StrictMode>,
   document.getElementById('root')
 );

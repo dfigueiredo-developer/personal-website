@@ -1,6 +1,5 @@
 .about-wrapper {
-     height: 100vh;
-     display: flex;
+     height: 120vh;
 
      &::after {
           content: '';
@@ -16,8 +15,13 @@
           filter: brightness(50%) saturate(165%) blur(.15em);
      }
 
+     &-content {
+          height: 100vh;
+          display: flex;
+     }
+
      &-left-content {
-          margin-left: $space-xl;
+          margin-left: $space-xxl;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -37,7 +41,7 @@
      }
 
      .download-btn {
-          padding: $space-s 0;
+          padding: $space-xs 0;
           font-size: 2rem;
           border: 2px solid white;
           text-decoration: none;
@@ -81,35 +85,19 @@
      }
 
      @include mq(breakpoint-xxl){
-
+          
           h1 {
-               font-size: 3.5em;
+               font-size: 3.46em;
           }
 
           p {
-               font-size: 1.5em;
+               font-size: 1.46em;
                width: 70%;
           }
 
           .download-btn {
-               font-size: 1.5em;
+               font-size: 1.46em;
                width: 60%;
-          }
-     }
-
-     @include mq(breakpoint-m){
-
-          & {
-               justify-content: center;
-          }
-
-          &-left-content {
-               align-items: center;
-               margin-left: 0;
-          }
-
-          p {
-               text-align: center;
           }
      }
 }
