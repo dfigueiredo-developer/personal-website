@@ -1,10 +1,33 @@
 .header-section-wrapper {
 
+     margin-bottom: $space-xxl;
+
+     .header-section-title {
+          display: flex;
+          align-items: center;
+          gap: $space-s;
+     }
+
+     .header-section-icon {
+          transform: scale(2);
+     }
+
      h1 {
-          
+          display: inline;
+          font-size: 3em;
+     }
+
+     .header-section-divider {
+          background-color: $color-primary;
+          height: $space-xs / 2;
+          width: $space-xxl * 1.5;
+          margin: $space-xs 0 $space-xs ($space-l - .4em);
+          border-radius: $space-xl;
      }
 
      p {
+          font-size: 1.5em;
           color: $color-neutral-600;
+          margin-left: $space-m - .5em;
      }
 }
