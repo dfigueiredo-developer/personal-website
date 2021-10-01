@@ -4,7 +4,7 @@ import iconDownload from '../../images/icons/download-cloud.svg';
 const About = () => {
      return ( 
          <section id = 'about' className = 'about-wrapper'>
-            <div className = 'about-wrapper-content'>
+            <div className = 'content'>
                <div className = 'about-wrapper-left-content'>
                   <h1>Diogo Figueiredo</h1>
                   <p>

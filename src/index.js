@@ -12,7 +12,10 @@ ReactDOM.render(
     <Navbar />
     <About />
     <Divider isDown = {true} />
+    <div className = 'content'>
     <Knowledge />
+    </div>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -12,16 +12,15 @@
           background: url(../../images/background-hero.jpg) no-repeat;
           background-size: cover;
           background-position: 0 30%;
-          filter: brightness(50%) saturate(165%) blur(.15em);
+          filter: brightness(50%) saturate(165%);
      }
 
-     &-content {
+     .content {
           height: 100vh;
           display: flex;
      }
 
      &-left-content {
-          margin-left: $space-xxl;
           display: flex;
           flex-direction: column;
           justify-content: center;

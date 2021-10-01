@@ -1,0 +1,21 @@
+.knowledge-card-wrapper{
+     border-radius: 10px 10px 0 0;
+     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+
+     .knowledge-img {
+          padding: $space-m $space-m;
+          max-width: $space-xxxl;
+     }
+
+     .knowledge-lang {
+          padding: $space-xxs 0;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5em;
+          color: white;
+          background-color: $color-neutral-600;
+          border-radius: 0 0 10px 10px;
+     }
+}

@@ -1,0 +1,8 @@
+.knowledge-wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: $space-xl;
+     width: calc(100% - 120px);
+     margin: auto;
+}

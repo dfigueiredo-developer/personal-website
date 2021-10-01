@@ -9,6 +9,7 @@ $breakpoints: (
 );
 
 /* Spaces */
+$space-xxs: .5em;
 $space-xs: 1em;
 $space-s: 2em;
 $space-m: 3em;
@@ -18,6 +19,7 @@ $space-xxl: 6em;
 $space-xxxl: 7em;
 
 $space-header: 70px;
+$space-content: 90%;
 
 /*  Fonts */
 $ff-sometype-mono: 'Sometype Mono';

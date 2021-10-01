@@ -4,13 +4,20 @@ import items from './KnowledgeItems';
 
 const Knowledge = (props) => {
      return ( 
-         <section id = 'knowledge' className = 'knowledge-wrapper'>
+         <section id = 'knowledge'>
               <HeaderSection title = 'Knowledge' description = 'Lorem ipsum' />
-              {
-                    items.map((item) => {
-                         return (<KnowledgeCard knowledgeItem = {item} />) 
-                    })
-               }
+              <div className = 'knowledge-wrapper'>
+                   {
+                         items.map((item) => {
+                              return (
+                                   <div>
+                                        <KnowledgeCard knowledgeItem = {item} />
+                                   </div>
+                              ) 
+                         })
+                    }
+              </div>
+              
          </section>
       );
 }

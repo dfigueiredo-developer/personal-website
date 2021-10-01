@@ -1,13 +1,19 @@
-.divider-up {
-     background-color: white;
-     height: $space-xxl;
-     margin-top: -($space-xxl);
-     transform: rotate(-2deg);
-}
+.divider {
+     position: relative;
+     height: $space-xl;
+     width: 100vw;
 
-.divider-down {
-     background-color: white;
-     height: $space-xxl;
-     margin-top: -$space-s;
-     transform: rotate(2deg);
+     path{
+          fill: white;
+        }
+
+     &.down {
+          transform: rotateX(180deg);
+          top: -$space-xl;
+     }
+
+     &.up {
+          transform: rotate(-180deg);
+          top: -$space-xl;
+     }
 }

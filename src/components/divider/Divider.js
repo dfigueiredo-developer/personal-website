@@ -1,12 +1,13 @@
 const Divider = (props) => {
 
-   var dividerClass = 'divider-up';
-   console.log(props);
+   var extraClassName = 'up';
    if(props.isDown)
-      dividerClass = 'divider-down';
+      extraClassName = 'down';
 
    return ( 
-      <div className = {dividerClass} />
+      <svg viewBox='0 0 100 100' preserveAspectRatio='none' className = {'divider ' + extraClassName}>
+         <path d='m 0,0 h 100 l -100,95z' />
+      </svg>
    );
 }
  
