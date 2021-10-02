@@ -1,7 +1,14 @@
+.divider-wrapper {
+     
+     &.up {
+          margin-top: $space-xl * 2;
+     }
+}
+
 .divider {
      position: relative;
      height: $space-xl;
-     width: 100vw;
+     width: 120vw;
 
      path{
           fill: white;

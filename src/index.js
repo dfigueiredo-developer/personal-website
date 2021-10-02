@@ -6,15 +6,16 @@ import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Divider from './components/divider/Divider';
 import Knowledge from './components/knowledge/Knowledge';
+import Project from './components/project/Project';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <About />
     <Divider isDown = {true} />
-    <div className = 'content'>
     <Knowledge />
-    </div>
+    <Divider color = '#F6F6F6' />
+    <Project />
 
   </React.StrictMode>,
   document.getElementById('root')

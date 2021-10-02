@@ -4,7 +4,7 @@ import items from './KnowledgeItems';
 
 const Knowledge = (props) => {
      return ( 
-         <section id = 'knowledge'>
+         <section id = 'knowledge' className = 'content'>
               <HeaderSection title = 'Knowledge' description = 'Lorem ipsum' />
               <div className = 'knowledge-wrapper'>
                    {
