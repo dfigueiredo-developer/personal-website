@@ -2,7 +2,7 @@ const ProjectCard = (props) => {
 
      return ( 
          <div className = 'project-card-wrapper'>
-              My projects              
+               My project       
          </div>
       );
 }

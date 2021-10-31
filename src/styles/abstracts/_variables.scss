@@ -1,6 +1,7 @@
 /* Breakpoints */
 $breakpoints: (
-  'breakpoint-s': 320px,
+  'breakpoint-xs': 320px,
+  'breakpoint-s': 700px,
   'breakpoint-m': 900px,
   'breakpoint-l': 1024px,
   'breakpoint-xl': 1200px,
@@ -18,8 +19,9 @@ $space-xl: 5em;
 $space-xxl: 6em;
 $space-xxxl: 7em;
 
-$space-header: 70px;
-$space-content: 90%;
+$width-content: 90%;
+$width-subcontent: calc(100% - 120px);
+$width-project-cards: 49%;
 
 /*  Fonts */
 $ff-sometype-mono: 'Sometype Mono';

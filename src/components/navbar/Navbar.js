@@ -18,7 +18,7 @@ const closeMenu = () => {
 const Navbar = () => {
      return (
           <header id = 'navbar-wrapper'>
-               <div className = 'content'>
+               <div className = 'navbar-content'>
                     <input type = 'checkbox' id = 'toogle' />
                     <span className = 'navbar-logo'>Diogo Figueiredo</span>
                     <nav className = 'navbar-items'>

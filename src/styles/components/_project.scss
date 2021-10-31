@@ -1,3 +1,12 @@
-#project {
+#projects {
      background-color: $color-neutral-200;
+}
+
+.projects-wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     width: $width-subcontent;
+     justify-content: space-between;
+     border: 1px solid blue;
+     margin: auto;
 }

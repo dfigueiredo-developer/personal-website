@@ -4,17 +4,13 @@ import items from './ProjectItems';
 
 const Projects = (props) => {
      return ( 
-         <section id = 'project'>
+         <section id = 'projects'>
                <div className = 'content'>
                     <HeaderSection title = 'Projects' description = 'Lorem ipsum' />
-                    <div className = 'project-wrapper'>
+                    <div className = 'projects-wrapper'>
                          {
                               items.map((item) => {
-                                   return (
-                                        <div>
-                                             <ProjectCard projectItem = {item} />
-                                        </div>
-                                   ) 
+                                   return ( <ProjectCard projectItem = {item} />) 
                               })
                          }
                     </div>

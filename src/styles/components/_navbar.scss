@@ -1,5 +1,5 @@
 #navbar-wrapper {
-     height: $space-header;
+     height: $space-l;
      width: 100%;
      opacity: 0;
      background-color: white;
@@ -11,7 +11,8 @@
      display: flex;
      justify-content: center;
 
-     .content {
+     .navbar-content {
+          width: $width-content;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -64,7 +65,7 @@
                flex-direction: column;
                justify-content: center;
                align-items: center;
-               top: $space-header;
+               top: $space-l;
                right: -100%;
                transition: all .5s;
                gap: $space-l;

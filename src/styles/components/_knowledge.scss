@@ -3,6 +3,13 @@
      flex-wrap: wrap;
      justify-content: space-between;
      gap: $space-xl;
-     width: calc(100% - 120px);
+     width: $width-subcontent;
      margin: auto;
+
+     @include mq(breakpoint-s) {
+          
+          & {
+               justify-content: center;
+          }
+     }
 }

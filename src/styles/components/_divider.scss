@@ -1,11 +1,12 @@
 .divider-wrapper {
+     height: $space-xl;
      
-     &.up {
+     /*&.up {
           margin-top: $space-xl * 2;
-     }
+     }*/
 }
 
-.divider {
+/*.divider {
      position: relative;
      height: $space-xl;
      width: 120vw;
@@ -14,7 +15,8 @@
           fill: white;
         }
 
-     &.down {
+     /*&.down {
+          background-color: red;
           transform: rotateX(180deg);
           top: -$space-xl;
      }
@@ -23,4 +25,4 @@
           transform: rotate(-180deg);
           top: -$space-xl;
      }
-}
+}*/
