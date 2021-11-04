@@ -1,7 +1,6 @@
-#navbar-wrapper {
+.navbar-wrapper {
      height: $space-l;
      width: 100%;
-     opacity: 0;
      background-color: white;
      transition: 0.4s;
      box-shadow: 0 0 3px 1px $color-neutral-200;
@@ -11,17 +10,22 @@
      display: flex;
      justify-content: center;
 
+     &.hidden {
+          opacity: 0;
+          pointer-events: none;
+     }
+
      .navbar-content {
           width: $width-content;
           display: flex;
           justify-content: space-between;
           align-items: center;
           font-weight: bold;
-
      }
 
      .navbar-logo {
           font-size: 1.5rem;
+          color: $color-neutral-800;
      }
      
      .navbar-items {
@@ -32,11 +36,8 @@
           padding-left: $space-m;
           text-decoration: none;
           font-weight: bold;
+          color: $color-neutral-800;
           transition: 0.4s;
-     }
-
-     a:hover {
-          color: black;
      }
 
      #toogle {
@@ -65,7 +66,8 @@
                flex-direction: column;
                justify-content: center;
                align-items: center;
-               top: $space-l;
+               top: $space-m;
+               backdrop-filter: blur(2px);
                right: -100%;
                transition: all .5s;
                gap: $space-l;

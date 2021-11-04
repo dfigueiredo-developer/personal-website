@@ -1,12 +1,8 @@
 import items from './NavbarItems';
 
 window.onscroll = () => {
-     var navbar = document.getElementById('navbar-wrapper');
-     if(window.scrollY > 70)
-          navbar.style.opacity = 1;
-     else
-          navbar.style.opacity = 0;
-          
+     var navbar = document.getElementsByClassName('navbar-wrapper')[0];
+     window.scrollY > 70 ? navbar.classList.remove('hidden') : navbar.classList.add('hidden');
 }
 
 const closeMenu = () => {
@@ -17,7 +13,7 @@ const closeMenu = () => {
 
 const Navbar = () => {
      return (
-          <header id = 'navbar-wrapper'>
+          <header className = 'navbar-wrapper'>
                <div className = 'navbar-content'>
                     <input type = 'checkbox' id = 'toogle' />
                     <span className = 'navbar-logo'>Diogo Figueiredo</span>
