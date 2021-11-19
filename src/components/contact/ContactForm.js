@@ -4,6 +4,7 @@ const ContactForm = (props) => {
                <input />
                <input />
                <input />
+               <input type ='submit' />
           </form>
      );
 }

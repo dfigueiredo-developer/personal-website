@@ -8,6 +8,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+
+
+
+
  html {
      line-height: 1.15; /* 1 */
      -webkit-text-size-adjust: 100%; /* 2 */
@@ -36,10 +40,14 @@
     * Correct the font size and margin on `h1` elements within `section` and
     * `article` contexts in Chrome, Firefox, and Safari.
     */
-   
-   h1 {
-     font-size: 2em;
-     margin: 0.67em 0;
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      margin: 0;
+      padding: 0;
    }
    
    /* Grouping content
@@ -348,6 +356,8 @@
      display: none;
    }
 
+   /*********************/
+
 html, body {
      scroll-behavior: smooth;
      color: $color-neutral-800;
@@ -366,7 +376,24 @@ p {
 }
 
 .content {
-     width: $width-content;
-     border: 1px solid red;
-     margin: auto;
+  width: $width-content;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.subcontent {
+  width: $width-subcontent;
+  margin: auto;
+}
+
+@include mq(breakpoint-s) {
+
+  .subcontent {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.padding-xxxl-0 {
+  padding: $space-xxxl 0;
 }

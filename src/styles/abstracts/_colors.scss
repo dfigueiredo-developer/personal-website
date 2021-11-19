@@ -1,6 +1,10 @@
+/* Color variables */
 $color-primary: #5374CB;
 
 $color-neutral-200: #F6F6F6;
 $color-neutral-400: #D4D4D4;
 $color-neutral-600: #838383;
 $color-neutral-800: #383838;
+
+/* Color classes */
+.bg-neutral-200 { background-color: $color-neutral-200; };

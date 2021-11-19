@@ -31,4 +31,21 @@
           color: $color-neutral-600;
           margin-left: $space-m - .5em;
      }
+
+     @include mq(breakpoint-s) {
+          
+          .header-section-title {
+               justify-content: center;
+          }
+
+          .header-section-divider {
+               margin: auto;
+               margin-top: $space-s;
+          }
+
+          p {
+               margin-left: 0;
+               text-align: center;
+          }
+     }
 }

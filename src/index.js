@@ -4,7 +4,6 @@ import reportWebVitals from './reportWebVitals';
 import './styles/main.scss';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
-import Divider from './components/divider/Divider';
 import Knowledge from './components/knowledge/Knowledge';
 import Project from './components/project/Project';
 import Contact from './components/contact/Contact';
@@ -13,11 +12,8 @@ ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <About />
-    {/*<Divider isDown = {true} />*/}
     <Knowledge />
-    {/*<Divider color = '#F6F6F6' />*/}
     <Project />
-    {/*<Divider isDown = {true} />*/}
     <Contact />
 
   </React.StrictMode>,

@@ -1,12 +1,12 @@
-#projects {
-     background-color: $color-neutral-200;
-}
+.projects-items {
+     display: grid;
+     grid-gap: $space-xs;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-.projects-wrapper {
-     display: flex;
-     flex-wrap: wrap;
-     width: $width-subcontent;
-     justify-content: space-between;
-     border: 1px solid blue;
-     margin: auto;
+     @include mq(breakpoint-s) {
+
+          & {
+               grid-template-columns: repeat(1, 1fr);
+          }
+     }
 }

@@ -1,5 +1,14 @@
 .project-card-wrapper {
      background-color: lightblue;
-     width: $width-project-cards;
-     height: $space-xxxl;
+     width: 100%;
+     padding-bottom: 100%;
+
+     @include mq(breakpoint-s) {
+
+          & {
+               width: 90%;
+               padding-bottom: 90%;
+               margin: auto;
+          }
+     }
 }
